@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "emberstoolbox:items/stamp_large_sword_blade"
-  }
-}
