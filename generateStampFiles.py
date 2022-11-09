@@ -42,13 +42,14 @@ stamps = [
 ]
 
 for stamp in stamps:
-  with open('src/main/resources/assets/emberstic/models/item/stamp_%s.json' % stamp, 'w') as outfile:
+  with open('src/main/resources/assets/emberstoolbox/models/item/stamp_%s.json' % stamp, 'w') as outfile:
       data = {
         "parent": "item/generated",
         "textures": {
-          "layer0": "emberstic:items/stamp_%s" % stamp
+          "layer0": "emberstoolbox:items/stamp_%s" % stamp
         }
       }
       json.dump(data, outfile, indent=2)
 
 print("Done!")
+pause
