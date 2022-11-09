@@ -1,4 +1,4 @@
-package terrapin47.emberstic.item;
+package h2steffes.emberstoolbox.item;
 
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
@@ -15,7 +15,7 @@ public class ItemBase extends Item {
 
     public ItemBase(String name) {
         setRegistryName(name);
-        setUnlocalizedName(terrapin47.emberstic.Emberstic.MODID + "." + name);
+        setUnlocalizedName(h2steffes.emberstoolbox.Emberstoolbox.MODID + "." + name);
         setCreativeTab(CreativeTabs.MATERIALS);
     }
 

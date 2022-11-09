@@ -1,11 +1,11 @@
-package terrapin47.emberstic.proxy;
+package h2steffes.emberstoolbox.proxy;
 
+import h2steffes.emberstoolbox.init.ModItems;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.relauncher.Side;
-import terrapin47.emberstic.init.ModItems;
 
 @Mod.EventBusSubscriber(Side.CLIENT)
 public class ClientProxy extends CommonProxy {

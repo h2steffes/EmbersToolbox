@@ -1,11 +1,11 @@
-package terrapin47.emberstic.init;
+package h2steffes.emberstoolbox.init;
 
+import h2steffes.emberstoolbox.item.ItemBase;
 import net.minecraft.item.Item;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import terrapin47.emberstic.item.ItemBase;
 
 public class ModItems {
 

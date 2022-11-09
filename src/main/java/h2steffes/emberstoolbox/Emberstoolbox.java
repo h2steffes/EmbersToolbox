@@ -1,26 +1,26 @@
-package terrapin47.emberstic;
+package h2steffes.emberstoolbox;
 
-import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import org.apache.logging.log4j.Logger;
-import terrapin47.emberstic.proxy.CommonProxy;
 
-@Mod(modid = terrapin47.emberstic.Emberstic.MODID, name = terrapin47.emberstic.Emberstic.MODNAME, version = terrapin47.emberstic.Emberstic.MODVERSION, useMetadata = true, dependencies = "required-after:embers;required-after:toolbox;")
-public class Emberstic {
+import h2steffes.emberstoolbox.proxy.CommonProxy;
+
+@Mod(modid = h2steffes.emberstoolbox.Emberstoolbox.MODID, name = h2steffes.emberstoolbox.Emberstoolbox.MODNAME, version = h2steffes.emberstoolbox.Emberstoolbox.MODVERSION, useMetadata = true, dependencies = "required-after:embers;required-after:toolbox;")
+public class Emberstoolbox {
 
     public static final String MODID = "emberstoolbox";
     public static final String MODNAME = "Embers Toolbox";
     public static final String MODVERSION= "0.1.0";
 
-    @SidedProxy(clientSide = "terrapin47.emberstic.proxy.ClientProxy", serverSide = "terrapin47.emberstic.proxy.ServerProxy")
+    @SidedProxy(clientSide = "h2steffes.emberstoolbox.proxy.ClientProxy", serverSide = "h2steffes.emberstoolbox.proxy.ServerProxy")
     public static CommonProxy proxy;
 
     @Mod.Instance
-    public static terrapin47.emberstic.Emberstic instance;
+    public static h2steffes.emberstoolbox.Emberstoolbox instance;
 
     public static Logger logger;
 

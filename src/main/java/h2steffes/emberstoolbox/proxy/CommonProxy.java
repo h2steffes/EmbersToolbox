@@ -1,7 +1,7 @@
-package terrapin47.emberstic.proxy;
+package h2steffes.emberstoolbox.proxy;
 
+import h2steffes.emberstoolbox.init.ModItems;
 import net.minecraft.block.Block;
-import net.minecraft.item.ItemBlock;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraft.item.Item;
@@ -9,7 +9,6 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import terrapin47.emberstic.init.ModItems;
 
 @Mod.EventBusSubscriber
 public class CommonProxy {
