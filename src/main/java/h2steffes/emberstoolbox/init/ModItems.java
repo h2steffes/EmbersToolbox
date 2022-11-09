@@ -27,6 +27,9 @@ public class ModItems {
     @GameRegistry.ObjectHolder("emberstic:stamp_pick_head")
     public static final ItemBase STAMP_PICK_HEAD = new ItemBase("stamp_pick_head");
 
+    @GameRegistry.ObjectHolder("emberstic:stamp_hand_pick_head")
+    public static final ItemBase STAMP_HAND_PICK_HEAD = new ItemBase("stamp_hand_pick_head");
+
     @GameRegistry.ObjectHolder("emberstic:stamp_shovel_head")
     public static final ItemBase STAMP_SHOVEL_HEAD = new ItemBase("stamp_shovel_head");
 
@@ -44,6 +47,7 @@ public class ModItems {
         STAMP_KAMA_HEAD.initModel();
         STAMP_KNIFE_BLADE.initModel();
         STAMP_PICK_HEAD.initModel();
+        STAMP_HAND_PICK_HEAD.initModel();
         STAMP_SHOVEL_HEAD.initModel();
         STAMP_SWORD_BLADE.initModel();
         STAMP_WIDE_GUARD.initModel();
@@ -56,6 +60,7 @@ public class ModItems {
         STAMP_KAMA_HEAD.register(event);
         STAMP_KNIFE_BLADE.register(event);
         STAMP_PICK_HEAD.register(event);
+        STAMP_HAND_PICK_HEAD.register(event);
         STAMP_SHOVEL_HEAD.register(event);
         STAMP_SWORD_BLADE.register(event);
         STAMP_WIDE_GUARD.register(event);
