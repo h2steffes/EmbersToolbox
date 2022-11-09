@@ -9,11 +9,11 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import org.apache.logging.log4j.Logger;
 import terrapin47.emberstic.proxy.CommonProxy;
 
-@Mod(modid = terrapin47.emberstic.Emberstic.MODID, name = terrapin47.emberstic.Emberstic.MODNAME, version = terrapin47.emberstic.Emberstic.MODVERSION, useMetadata = true, dependencies = "required-after:embers;required-after:tconstruct;required-after:conarm")
+@Mod(modid = terrapin47.emberstic.Emberstic.MODID, name = terrapin47.emberstic.Emberstic.MODNAME, version = terrapin47.emberstic.Emberstic.MODVERSION, useMetadata = true, dependencies = "required-after:embers;required-after:toolbox;")
 public class Emberstic {
 
-    public static final String MODID = "emberstic";
-    public static final String MODNAME = "Emberstic";
+    public static final String MODID = "emberstoolbox";
+    public static final String MODNAME = "Embers Toolbox";
     public static final String MODVERSION= "0.1.0";
 
     @SidedProxy(clientSide = "terrapin47.emberstic.proxy.ClientProxy", serverSide = "terrapin47.emberstic.proxy.ServerProxy")
