@@ -25,4 +25,3 @@ for stamp in stamps:
       json.dump(data, outfile, indent=2)
 
 print("Done!")
-pause
