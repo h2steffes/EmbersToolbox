@@ -16,7 +16,7 @@ public class Emberstoolbox {
     public static final String MODNAME = "Embers Toolbox";
     public static final String MODVERSION= "0.1.0";
 
-    @SidedProxy(clientSide = "h2steffes.emberstoolbox.proxy.ClientProxy", serverSide = "h2steffes.emberstoolbox.proxy.ServerProxy")
+    @SidedProxy(clientSide = "h2steffes.emberstoolbox.proxy.ClientProxy", serverSide = "h2steffes.emberstoolbox.proxy.CommonProxy")
     public static CommonProxy proxy;
 
     @Mod.Instance

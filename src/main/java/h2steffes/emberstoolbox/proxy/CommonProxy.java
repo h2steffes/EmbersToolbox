@@ -1,7 +1,11 @@
 package h2steffes.emberstoolbox.proxy;
 
+import java.io.File;
+
+import h2steffes.emberstoolbox.Config;
 import h2steffes.emberstoolbox.init.ModItems;
 import net.minecraft.block.Block;
+import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraft.item.Item;
@@ -13,7 +17,13 @@ import recipes.StamperRecipes;
 
 @Mod.EventBusSubscriber
 public class CommonProxy {
+	
+	public static Configuration config;
+	
     public void preInit(FMLPreInitializationEvent event) {
+    	File directory = event.getModConfigurationDirectory();
+        config = new Configuration(new File(directory.getPath(), "embers_toolbox.cfg"));
+        Config.readConfig();
     }
 
     public void init(FMLInitializationEvent event) {
@@ -21,6 +31,9 @@ public class CommonProxy {
     }
 
     public void postInit(FMLPostInitializationEvent event) {
+    	if (config.hasChanged()) {
+			config.save();
+		}
     }
 
     @SubscribeEvent
