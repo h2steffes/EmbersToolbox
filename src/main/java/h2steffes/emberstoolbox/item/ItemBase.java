@@ -1,13 +1,13 @@
 package h2steffes.emberstoolbox.item;
 
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.oredict.OreDictionary;
+import toolbox.Toolbox;
 
 public class ItemBase extends Item {
 
@@ -16,7 +16,7 @@ public class ItemBase extends Item {
     public ItemBase(String name) {
         setRegistryName(name);
         setUnlocalizedName(h2steffes.emberstoolbox.Emberstoolbox.MODID + "." + name);
-        setCreativeTab(CreativeTabs.MATERIALS);
+        setCreativeTab(Toolbox.partsTab);
     }
 
     public ItemBase(String name, String oredict) {
